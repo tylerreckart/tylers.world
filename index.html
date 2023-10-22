@@ -1,29 +1,111 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>reckart.land</title>
-        <meta name="description" content="Tyler Reckart is a multidisciplinary creative technologist focused on building digital products for the human-centered world.">
+        <title>tylers.world</title>
+        <meta name="description" content="Tyler Reckart is a multidisciplinary creative technologist, artist, and writer primarily focused on solving software problems centered around human interaction. Taking a holistic approach, he is deeply involved in every aspect of his work from user experience research through design and implementation.">
         <meta property="copyright" content="© 2023 Tyler Reckart">
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
         <style type="text/css">
-            html, body { width: 100%; height: 100%;}
-            body { display: flex; align-items: center; justify-content: center; font-size: 16px; line-height: 22px; }
-            main { max-width: 420px; }
-            h1 { font-size: 16px; }
-            li { line-height: 28px; }
+            html, body {
+              width: 100%;
+              height: 100%;
+              margin: 0;
+              padding: 0;
+            }
+
+            body {
+                font-family: 'Roboto Mono', monospace;
+                display: flex;
+                align-items: flex-start;
+                font-size: 12px;
+                line-height: 28px;
+            }
+
+            main {
+              max-width: 540px;
+              margin: 36px;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              align-self: flex-start;
+            }
+
+            header {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 20px;
+            }
+
+            em {
+              margin: 20px 0;
+              display: block;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            li {
+              margin-bottom: 12px;
+            }
+
+            li:last-of-type {
+              margin-bottom: 0;
+            }
+
+            a {
+                color: #228BED;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            footer {
+              display: block;
+              margin-top: 36px;
+              font-style: italic;
+              text-align: left;
+              font-size: 10px;
+            }
+
+            .hidden {
+              display: none;
+            }
         </style>
     </head>
     <body>
         <main>
-            <h1>🏰 reckart.land</h1>
-            <p>Hi, I'm Tyler. I'm a multidisciplinary creative technologist focused on building digital products for the human-centered world. Currently, I'm a Principal Software Engineer at <a href="https://drivewealth.com/" target="_blank" rel="noopener noreferrer">DriveWealth</a>, where I lead the engineering efforts of strategic partnerships group. In my previous role I led the front-end performance engineering team at <a href="https://activecampaign.com/" target="_blank" rel="noopener noreferrer">ActiveCampaign</a>. <br/><br/>I can be found elsewhere on the internet below.</p>
+          <header>
+            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="30" viewBox="0 0 38 30" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M19 30C29.245 30 38 23.5036 38 15C38 6.49641 29.245 0 19 0C8.75503 0 0 6.49641 0 15C0 23.5036 8.75503 30 19 30ZM11.4017 7C10.7318 7 10.0969 7.33042 9.7729 7.91685C8.87589 9.5404 8.27607 11.4234 8.07473 13.4688C8.04646 13.7561 8.27592 14 8.56457 14L17.4899 14C17.7661 14 17.9899 13.7761 17.9899 13.5V7.5C17.9899 7.22386 17.7661 7 17.4899 7H11.4017ZM12.8982 4.19058C12.5464 4.468 12.7561 5 13.2041 5H24.7959C25.2439 5 25.4536 4.468 25.1018 4.19058C23.3395 2.8012 21.2314 2 19 2C16.7686 2 14.6605 2.8012 12.8982 4.19058ZM28.2271 7.91685C27.9031 7.33042 27.2682 7 26.5983 7H20.4899C20.2138 7 19.9899 7.22386 19.9899 7.5V13.5C19.9899 13.7761 20.2138 14 20.4899 14L29.4354 14C29.7241 14 29.9535 13.7561 29.9253 13.4688C29.7239 11.4234 29.1241 9.5404 28.2271 7.91685ZM8.02487 5.07724C8.48755 4.77604 8.99352 5.40531 8.68807 5.8652C7.24127 8.04354 6.30441 10.6834 6.06232 13.529C6.03986 13.793 5.82168 14 5.5567 14L2.60428 14C2.30812 14 2.07584 13.7436 2.12218 13.4511C2.64362 10.1594 4.80414 7.17393 8.02487 5.07724ZM6.06232 16.471C6.03986 16.207 5.82168 16 5.5567 16H2.60428C2.30812 16 2.07584 16.2564 2.12218 16.5489C2.64361 19.8407 4.80414 22.8261 8.02486 24.9228C8.48754 25.224 8.99352 24.5947 8.68807 24.1348C7.24127 21.9565 6.30441 19.3166 6.06232 16.471ZM11.3041 16.3831C11.2501 16.1584 11.0491 16 10.818 16H8.56457C8.27592 16 8.04648 16.2442 8.07476 16.5315C8.45027 20.3458 10.2115 23.5951 12.7016 25.6508C13.0501 25.9385 13.524 25.6128 13.4184 25.1734L11.3041 16.3831ZM13.9036 16C13.5801 16 13.3418 16.3025 13.4174 16.6169L14.8285 22.4836C14.9461 22.9728 15.6313 23.0014 15.7893 22.5237L17.7295 16.657C17.8365 16.3334 17.5955 16 17.2547 16H13.9036ZM20.7742 16C20.4279 16 20.1865 16.3435 20.3038 16.6694L22.4202 22.5484C22.5906 23.0218 23.2746 22.9754 23.3796 22.4835L24.6349 16.6044C24.7013 16.2932 24.4641 16 24.1459 16H20.7742ZM27.2135 16C26.9776 16 26.7738 16.1649 26.7246 16.3956L24.9083 24.9021C24.8132 25.3473 25.3017 25.6598 25.6411 25.3563C27.9493 23.2917 29.5672 20.1684 29.9252 16.5315C29.9535 16.2442 29.7241 16 29.4354 16H27.2135ZM21.5873 27.6339C21.8552 27.557 21.9931 27.2668 21.8987 27.0046L19.5306 20.4262C19.3696 19.9792 18.7346 19.9875 18.5854 20.4386L16.3844 27.0939C16.2966 27.3596 16.4436 27.6471 16.715 27.7155C17.4553 27.9021 18.2201 28 19 28C19.8866 28 20.7537 27.8735 21.5873 27.6339ZM29.9751 24.9228C29.5125 25.224 29.0065 24.5947 29.3119 24.1348C30.7587 21.9565 31.6956 19.3166 31.9377 16.471C31.9601 16.207 32.1783 16 32.4433 16H35.3957C35.6919 16 35.9242 16.2564 35.8778 16.5489C35.3564 19.8407 33.1959 22.8261 29.9751 24.9228ZM29.3119 5.8652C29.0065 5.40531 29.5125 4.77604 29.9751 5.07725C33.1959 7.17394 35.3564 10.1594 35.8778 13.4511C35.9242 13.7436 35.6919 14 35.3957 14L32.4433 14C32.1783 14 31.9601 13.793 31.9377 13.529C31.6956 10.6834 30.7587 8.04354 29.3119 5.8652Z" fill="#228BED"/>
+            </svg>
+            <h1 class="hidden">tylers.world</h1>
+          </header>
+          <div class="body">
+            <p>I'm a multidisciplinary creative technologist, artist, and writer primarily focused on solving software problems centered around human interaction. I take a holistic approach to my work, being deeply involved in every aspect, from user experience research through design and implementation. Currently, I am a Principal Software Engineer at <a href="https://drivewealth.com" target="_blank" rel="noopener,noreferrer">DriveWealth</a> where I lead the engineering efforts of our Strategic Partnerships group. In my previous role, I led the front-end performance engineering team at <a href="https://activecampaign.com" target="_blank" rel="noopener,noreferrer">ActiveCampaign</a>.</p>
+            <p><em>I can be found elsewhere on the internet below.</em></p>
             <ul>
-                <li>💾 <a href="https://github.com/tylerreckart" rel="noopener noreferrer" target="_blank">github.com/tylerreckart</a></li>
-                <li>📝 <a href="https://reckart.blog" rel="noopener noreferrer" target="_blank">reckart.blog</a></li>
-                <li>🐘 <a href="https://mastodon.social/@tyler" rel="noopener noreferrer me" target="_blank">mastodon.social/@tyler</a></li>
-                <li>🗄️ <a href="https://linkedin.com/in/tylerreckart" rel="noopener noreferrer" target="_blank">linkedin.com/in/tylerreckart</a></li>
+              <li>
+                <a href="https://reckart.blog" target="_blank" rel="noopener noreferrer">My Blog</a>— thoughts on programming, technology, and design.
+              </li>
+              <!-- Oh look what you found. This doesn't exist yet, but will someday. -->
+              <!-- <li>
+                <a href="https://anthronomicon.com" target="_blank" rel="noopener noreferrer">The Anthronomicon</a>— essays on history, culture, and what makes us human.
+              </li> -->
+              <li>
+                <a href="https://github.com/tylerreckart" target="_blank" rel="noopener noreferrer">Github</a>— open-source contributions, projects, and ideas.
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/tylerreckart" target="_blank" rel="noopener noreferrer">LinkedIn</a>— curriculum vitae.
+              </li>
             </ul>
+          </div>
         </main>
     </body>
 </html>
