@@ -56,11 +56,6 @@ h3 {
   margin: 16px 0 12px;
 }
 
-em {
-  margin: 20px 0;
-  display: block;
-}
-
 /* Lists */
 ul {
   list-style: none;
@@ -69,9 +64,14 @@ ul {
 li {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  margin-bottom: 6px;
+}
+
+li div {
+  display: flex;
+  align-items: center;
   gap: 4px;
-  max-height: 28px;
-  margin-bottom: 12px;
 }
 
 li:last-of-type {
@@ -177,7 +177,7 @@ a:hover::after {
   position: absolute;
   width: 300px;
   height: 480px;
-  top: 320px;
+  top: 340px;
   left: 70%;
   display: flex;
   flex-direction: column;
@@ -272,5 +272,16 @@ a:hover::after {
   #calc-outer,
   #notepad-outer {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  li {
+    display: flex;
+    margin-bottom: 12px;
+  }
+
+  li div {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
