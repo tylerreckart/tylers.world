@@ -1,0 +1,276 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fullscreen Setup */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "komet", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-start;
+  line-height: 28px;
+  background: repeating-conic-gradient(
+    #ffffff 0deg 90deg,
+    #858585 90deg 180deg
+  );
+  background-size: 4px 4px;
+}
+
+body.interacting {
+  user-select: none;
+}
+
+/* Layout */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Typography */
+.logo {
+  margin-top: 24px;
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid black;
+}
+
+h2,
+h3 {
+  font-size: 14px;
+  border-bottom: 2px solid black;
+  margin: 16px 0 12px;
+}
+
+em {
+  margin: 20px 0;
+  display: block;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-height: 28px;
+  margin-bottom: 12px;
+}
+
+li:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Links */
+a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 300ms ease-in-out;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* Windows Styling */
+.main-window,
+#notepad-outer,
+#calc-outer {
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 8px 8px 0 0 black;
+}
+
+.main-window {
+  max-width: 720px;
+  margin: 24px;
+  z-index: 5;
+}
+
+.window-content {
+  padding: 24px;
+}
+
+/* Notepad Styling */
+#notepad-outer {
+  position: absolute;
+  width: 400px;
+  height: 420px;
+  top: 200px;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+#notepad-outer.active {
+  z-index: 3;
+}
+
+.notepad-content {
+  display: flex;
+  height: 100%;
+}
+
+.notepad-content textarea {
+  font-family: "cofo-sans-pixel", sans-serif;
+  font-size: 16px;
+  border: none;
+  resize: none;
+  flex: 1;
+  padding: 16px 24px;
+  line-height: 36px;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+#notepad-header,
+#calc-header {
+  cursor: grab;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 12px;
+  border-bottom: 2px solid black;
+  padding: 6px 0;
+  text-align: center;
+  user-select: none;
+}
+
+#notepad-header.grabbing,
+#calc-header.grabbing {
+  cursor: grabbing;
+}
+
+/* Calculator Styling */
+#calc-outer {
+  position: absolute;
+  width: 300px;
+  height: 480px;
+  top: 320px;
+  left: 70%;
+  display: flex;
+  flex-direction: column;
+  z-index: 8;
+}
+
+#calc-outer.active {
+  z-index: 3;
+}
+
+.calc-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px;
+  background: repeating-conic-gradient(#000 0deg 90deg, #fff 90deg 180deg);
+  background-size: 4px 4px;
+}
+
+.calc-content .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calc-content .button-square {
+  font-family: "cofo-sans-pixel", sans-serif;
+  font-size: 16px;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 0 0 black;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: white;
+  margin: 0 4px 4px 0;
+}
+
+.button-square.double {
+  width: 113px;
+}
+
+@keyframes press {
+  0% {
+    box-shadow: 0px 0px 0 0 black;
+    margin: 4px 0 0 4px;
+    background: lightgray;
+  }
+  100% {
+    box-shadow: 4px 4px 0 0 black;
+    margin: 0;
+    background: white;
+  }
+}
+
+.button-square.animate-press {
+  animation: press 1s steps(2);
+}
+
+#result-window {
+  background: white;
+}
+
+.calc-content #result-window {
+  font-family: "cofo-sans-pixel", sans-serif;
+  font-size: 16px;
+  display: flex;
+  width: 100%;
+  height: 48px;
+  border: 2px solid black;
+  box-shadow: inset 4px 4px 0 0 lightgray;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 24px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 1400px) {
+  #notepad-outer {
+    left: 2%;
+  }
+  #calc-outer {
+    left: 70%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #calc-outer,
+  #notepad-outer {
+    display: none;
+  }
+}
