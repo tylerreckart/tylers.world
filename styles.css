@@ -37,10 +37,10 @@ main {
   width: 100%;
   background: repeating-conic-gradient(
     #ffffff 0deg 90deg,
-    #3796C2 90deg 180deg
+    #c2c2c2 90deg 180deg
   );
   background-size: 4px 4px;
-  border: 48px solid #3796C2;
+  border: 48px solid #c2c2c2;
 }
 
 /* Typography */
@@ -369,36 +369,6 @@ footer {
 .partytext span:nth-child(3) { animation-delay: 0.05s; }
 .partytext span:nth-child(4) { animation-delay: 0.075s; }
 .partytext span:nth-child(5) { animation-delay: 0.1s; }
-.partytext span:nth-child(6) { animation-delay: 0.125s; }
-.partytext span:nth-child(7) { animation-delay: 0.15s; }
-.partytext span:nth-child(8) { animation-delay: 0.175s; }
-.partytext span:nth-child(9) { animation-delay: 0.2s; }
-.partytext span:nth-child(10) { animation-delay: 0.225s; }
-.partytext span:nth-child(11) { animation-delay: 0.25s; }
-.partytext span:nth-child(12) { animation-delay: 0.275s; }
-.partytext span:nth-child(13) { animation-delay: 0.3s; }
-.partytext span:nth-child(14) { animation-delay: 0.325s; }
-.partytext span:nth-child(15) { animation-delay: 0.35s; }
-.partytext span:nth-child(16) { animation-delay: 0.375s; }
-.partytext span:nth-child(17) { animation-delay: 0.4s; }
-.partytext span:nth-child(18) { animation-delay: 0.425s; }
-.partytext span:nth-child(19) { animation-delay: 0.45s; }
-.partytext span:nth-child(20) { animation-delay: 0.475s; }
-.partytext span:nth-child(21) { animation-delay: 0.5s; }
-.partytext span:nth-child(22) { animation-delay: 0.525s; }
-.partytext span:nth-child(23) { animation-delay: 0.55s; }
-.partytext span:nth-child(24) { animation-delay: 0.575s; }
-.partytext span:nth-child(25) { animation-delay: 0.6s; }
-.partytext span:nth-child(26) { animation-delay: 0.625s; }
-.partytext span:nth-child(27) { animation-delay: 0.65s; }
-.partytext span:nth-child(28) { animation-delay: 0.675s; }
-.partytext span:nth-child(29) { animation-delay: 0.7s; }
-.partytext span:nth-child(30) { animation-delay: 0.725s; }
-.partytext span:nth-child(31) { animation-delay: 0.75s; }
-.partytext span:nth-child(32) { animation-delay: 0.775s; }
-.partytext span:nth-child(33) { animation-delay: 0.8s; }
-.partytext span:nth-child(34) { animation-delay: 0.825s; }
-.partytext span:nth-child(35) { animation-delay: 0.85s; }
 
 @keyframes wave {
   0% { transform: translateY(0px); }
@@ -435,7 +405,7 @@ footer {
 }
 
 main.color-cycle {
-  animation: bodyColorCycle 5s steps(1) infinite;
+  animation: bodyColorCycle 2s steps(1) infinite;
 }
 
 /* Responsive Styling */

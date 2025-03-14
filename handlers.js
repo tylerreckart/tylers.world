@@ -677,7 +677,14 @@ function makeDraggable(element, handle) {
 
 document
   .getElementById("note-trigger")
-  .addEventListener("click", startPartyRain);
+  .addEventListener("click", () => {
+    const music = new Audio('partymusic.mp3');
+    music.play();
+
+    setTimeout(() => {
+      startPartyRain();
+    }, 18000);
+  });
 
 const partyHats = [
   `<svg width="30" height="20" viewBox="0 0 30 20" class="party-hat">
@@ -716,10 +723,11 @@ let partyActive = false;
 
 function startPartyRain() {
   if (partyActive) return;
+
   partyActive = true;
 
-  const partyDuration = 60000; // 60 seconds
-  const spawnInterval = 500; // Spawn every 500ms
+  const partyDuration = 70000;
+  const spawnInterval = 1000;
   const partyStartTime = Date.now();
 
   const main = document.getElementById("main");
