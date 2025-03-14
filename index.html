@@ -23,7 +23,7 @@
 </head>
 
 <body>
-  <main>
+  <main id="main">
     <svg width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo">
       <path fill-rule="evenodd" clip-rule="evenodd"
         d="M22.735 34.0278C33.6629 34.0278 43.0016 27.0983 43.0016 18.0278C43.0016 8.95733 33.6629 2.02783 22.735 2.02783C11.807 2.02783 2.46829 8.95733 2.46829 18.0278C2.46829 27.0983 11.807 34.0278 22.735 34.0278Z"
@@ -50,20 +50,29 @@
         <h2>I can be found elsewhere on the internet below:</h2>
         <ul>
           <li>
-            <a href="https://reckart.blog" target="_blank" rel="noopener noreferrer">My Blog</a>— thoughts on
-            programming, technology, and design.
+            <div>
+              <a href="https://reckart.blog" target="_blank" rel="noopener noreferrer">My Blog</a>— thoughts on
+              programming, technology, and design.
+            </div>
           </li>
           <li>
-            <a href="https://github.com/tylerreckart" target="_blank" rel="noopener noreferrer">Github</a>— open-source
-            software contributions, projects, and ideas.
+            <div>
+              <a href="https://github.com/tylerreckart" target="_blank" rel="noopener noreferrer">Github</a>—
+              open-source
+              software contributions, projects, and ideas.
+            </div>
           </li>
           <li>
-            <a href="https://dribbble.com/tylersworld" target="_blank" rel="noopener noreferrer">Dribbble</a>— visual
-            art and design.
+            <div>
+              <a href="https://dribbble.com/tylersworld" target="_blank" rel="noopener noreferrer">Dribbble</a>— visual
+              art and design.
+            </div>
           </li>
           <li>
-            <a href="https://linkedin.com/in/tylerreckart" target="_blank" rel="noopener noreferrer">LinkedIn</a>—
-            curriculum vitae.
+            <div>
+              <a href="https://linkedin.com/in/tylerreckart" target="_blank" rel="noopener noreferrer">LinkedIn</a>—
+              curriculum vitae.
+            </div>
           </li>
         </ul>
         <h2>Projects, contributions, and publications:</h2>
@@ -157,8 +166,7 @@
     <div id="notepad-outer">
       <div id="notepad-header">Notepad</div>
       <div class="notepad-content">
-        <textarea>
-  The best way to understand a system is to break it. The best way to understand yourself is to... wait, maybe don’t do that.</textarea>
+        <textarea id="notepad-text">The best way to understand a system is to break it. The best way to understand yourself is to... wait, maybe don’t do that.</textarea>
       </div>
     </div>
 
@@ -199,6 +207,17 @@
         </div>
       </div>
     </div>
+
+    <div id="note" class="note">
+      <div id="note-handle" class="note-handle">
+        <div id="note-killswitch" class="kill"></div>
+      </div>
+      <p id="note-trigger" class="partytext">
+        <span>.</span><span>.</span><span>.</span>
+      </p>
+    </div>
+
+    <footer>Copyright &copy; 2025 Tyler Reckart. All Rights Reserved.</footer>
   </main>
 
   <script src="handlers.js" type="text/javascript"></script>
