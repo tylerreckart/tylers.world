@@ -443,4 +443,8 @@ main.color-cycle {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  footer {
+    margin: 48px;
+  }
 }
